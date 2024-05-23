@@ -1,3 +1,11 @@
-<div>
-    <img [src]="film.primary_image" alt="image of film" width="200">
-</div>
+<figure class="shadow-5 position-relative">
+    <img [src]="film.primary_image" alt="image of film" width="200" class="img-fluid rounded-4 shadow-4-strong">
+    <figcaption class="buttons-images d-flex  flex-column align-items-center justify-content-center ">
+        <a href="#" class="icon d-flex align-items-end justify-content-center">
+            <span class="material-symbols-outlined"> info </span>
+        </a>
+        <a href="#" class="icon-2 d-flex align-items-start justify-content-center">
+            <span class="material-symbols-outlined "> visibility </span>
+        </a>
+    </figcaption>
+</figure>

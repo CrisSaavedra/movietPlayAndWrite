@@ -1,0 +1,59 @@
+.buttons-images {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38%;
+    
+    .icon {
+        background-color: rgba(180, 180, 180, 0.825);
+        width: 4.8rem;
+        height: 2.5rem;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        color: rgb(114, 114, 114);
+        transition: background-color 0.2s ease;
+
+        span {
+            padding-bottom: .3rem;
+        }
+    }
+
+    .icon:hover {
+        background-color: rgba(122, 122, 122, 0.641);
+    }
+
+
+    .icon-2 {
+        background-color: rgba(112, 112, 112, 0.825);
+        width: 4.8rem;
+        height: 2.5rem;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        color: rgb(180, 180, 180);
+        transition: background-color 0.2s ease;
+
+        span {
+            padding-top: .45rem;
+        }
+    }
+
+    .icon-2:hover {
+        background-color: rgba(195, 193, 193, 0.641);
+    }
+}
+
+img{
+    transition: filter 0.5s ease;
+}
+
+figure:hover  img{
+    filter: blur(1px);
+}
+
+figure figcaption{
+    visibility: hidden;
+}
+
+figure:hover figcaption{
+    visibility: visible;
+}

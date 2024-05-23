@@ -1,8 +1,14 @@
-<div class="container-fluid d-flex flex-column align-items-center" style="background-color: var(--primary-color);" >
-    <h2 style="margin-top: 10rem;">Welcome to <span>Moviet</span></h2>
-    <p>Where you can find all the movies of your life and more.</p>
+<div class="container-fluid d-flex flex-column align-items-center" >
+    <h1 style="margin-top: 10rem;" class="text-primary">Welcome to <span>Moviet</span></h1>
+    <p class="text-primary-20">Where you can find all the movies of your life and more.</p>
 
-    <div class="mt-2 d-flex gap-3">
-        <movies-cards></movies-cards>
+    <p class="mt-5">The new...</p>
+    <div class="my-2 d-flex gap-4">
+        <movies-cards [film]="film" *ngFor="let film of films"></movies-cards>
     </div>
+
+    <section class="text-center my-5 w-50">
+        <h3>This is the title</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eum tempore nostrum ducimus. Tenetur sequi, excepturi rerum reprehenderit laboriosam quod animi aliquid placeat odio aperiam illum culpa eos eligendi libero.</p>
+    </section>
 </div>
