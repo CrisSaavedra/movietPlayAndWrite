@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 
 
@@ -7,7 +6,6 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
     MdbCollapseModule
   ],
   exports:[
