@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Error404Component } from './share/error404/error404.component';
+import { Error404PageComponent } from './shared/error404-page/error404-page.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Error404Component,
+    Error404PageComponent,
+    
   
   ],
   imports: [
