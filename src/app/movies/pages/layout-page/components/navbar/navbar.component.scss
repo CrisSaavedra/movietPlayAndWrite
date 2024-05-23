@@ -1,0 +1,13 @@
+nav{
+    background-color: var(--primary-color);
+}
+
+ul{
+    a{
+        color: var(--tertiary-color);
+    }
+
+    a:hover{
+        color: var(--four-color);
+    }
+}
