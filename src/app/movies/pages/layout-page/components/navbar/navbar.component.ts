@@ -8,8 +8,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class NavbarComponent {
     
   @Input() isAuthenticated? : boolean;
-  @Output() logout  = new EventEmitter()
-
-  
+  @Output() logout  = new EventEmitter();
 
 }
