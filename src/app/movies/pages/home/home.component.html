@@ -4,7 +4,7 @@
 
     <p class="mt-5">The new...</p>
     <div class="my-2 d-flex gap-4">
-        <movies-cards [film]="film" *ngFor="let film of films"></movies-cards>
+        <movies-cards [film]="film" [isAuthenticated]="isAuthenticated()" *ngFor="let film of films"></movies-cards>
     </div>
 
     <section class="text-center my-5 w-50">

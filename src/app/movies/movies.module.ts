@@ -6,6 +6,7 @@ import { MoviesRoutingModule } from './movies-routing.module';
 import { Mdb5Module } from '../mdb5/mdb5.module';
 import { NavbarComponent } from './pages/layout-page/components/navbar/navbar.component';
 import { CardsComponent } from './shared/cards/cards.component';
+import { FakeAuthService } from '../fakeAuth/fake-auth.service';
 
 
 
@@ -20,6 +21,7 @@ import { CardsComponent } from './shared/cards/cards.component';
     CommonModule,
     MoviesRoutingModule,
     Mdb5Module
-  ]
+  ],
+  providers: []
 })
 export class MoviesModule { }

@@ -1,6 +1,6 @@
 <div class="w-100 d-flex flex-column justify-content-center align-items-center gap-5" style="height: 100dvh;"> 
     <h1 class="text-light">Moviet</h1>
-    <form class="border p-4 rounded rounded-3 shadow-5 bg-light" style="width: 25rem;">
+    <form class="border p-4 rounded rounded-3 shadow-5 bg-light" style="width: 25rem;" (submit)="login($event)">
         <!-- Email input -->
         <mdb-form-control class="mb-4">
             <input mdbInput type="email" id="form1Example1" class="form-control" />
@@ -22,11 +22,11 @@
             </div>
             <div class="col">
                 <!-- Simple link -->
-                <a href="#!">Forgot password?</a>
+                <a href="#">Forgot password?</a>
             </div>
         </div>
         <!-- Submit button -->
-        <button mdbRipple type="button" class="btn btn-primary btn-block">Sign in</button>
+        <button mdbRipple type="submit" class="btn btn-primary btn-block" >Sign in</button>
     </form>
 
     <div class="background bg-primary rounded-4 shadow-5"></div>
