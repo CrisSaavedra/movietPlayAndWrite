@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FakeAuthService } from 'src/app/fakeAuth/fake-auth.service';
 
@@ -9,12 +10,24 @@ import { FakeAuthService } from 'src/app/fakeAuth/fake-auth.service';
 })
 export class LoginComponent {
 
-  constructor(private fakeAuth: FakeAuthService, private router : Router) { }
 
-  login(event : Event){
+  public loginData = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required])
+  });
+
+  constructor(private fakeAuth: FakeAuthService, private router: Router) { }
+
+  login(event: Event) {
     event.preventDefault();
-    this.fakeAuth.login();
-    this.router.navigate(['/home']);
+    let email = this.loginData.get('email')?.value?.toLowerCase();
+    let password = this.loginData.get('password')?.value;
+    if (email && password) {
+      this.fakeAuth.login(email, password).subscribe(response => {        
+        if (response.length > 0) this.router.navigate(['/home']);
+        else alert('Usuario o contraseña incorrectos');
+      });
+    }
   }
 
 }

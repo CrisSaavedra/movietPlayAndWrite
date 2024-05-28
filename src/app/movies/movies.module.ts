@@ -6,7 +6,8 @@ import { MoviesRoutingModule } from './movies-routing.module';
 import { Mdb5Module } from '../mdb5/mdb5.module';
 import { NavbarComponent } from './pages/layout-page/components/navbar/navbar.component';
 import { CardsComponent } from './shared/cards/cards.component';
-import { FakeAuthService } from '../fakeAuth/fake-auth.service';
+import { InfoComponent } from './pages/info/info.component';
+import { FilmsComponent } from './pages/films/films.component';
 
 
 
@@ -16,12 +17,13 @@ import { FakeAuthService } from '../fakeAuth/fake-auth.service';
     HomeComponent,
     NavbarComponent,
     CardsComponent,
+    InfoComponent,
+    FilmsComponent,
   ],
   imports: [
     CommonModule,
     MoviesRoutingModule,
-    Mdb5Module
+    Mdb5Module,
   ],
-  providers: []
 })
 export class MoviesModule { }

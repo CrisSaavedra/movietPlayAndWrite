@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Error404PageComponent } from './shared/error404-page/error404-page.component';
-import { FakeAuthService } from './fakeAuth/fake-auth.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -20,9 +20,9 @@ import { FakeAuthService } from './fakeAuth/fake-auth.service';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
+    HttpClientModule
 
   ],
-  providers: [FakeAuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

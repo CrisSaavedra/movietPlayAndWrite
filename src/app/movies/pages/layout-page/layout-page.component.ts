@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FakeAuthService } from 'src/app/fakeAuth/fake-auth.service';
 
 @Component({
@@ -6,20 +6,27 @@ import { FakeAuthService } from 'src/app/fakeAuth/fake-auth.service';
   templateUrl: './layout-page.component.html',
   styleUrls: ['./layout-page.component.scss']
 })
-export class LayoutPageComponent {
+export class LayoutPageComponent implements OnInit {
 
   constructor(private fakeAuth: FakeAuthService) { }
 
 
-  isAuthenticated(): boolean{
+  ngOnInit(): void {
+    if(localStorage.getItem('user_session')){
+      let {email, password} = JSON.parse(localStorage.getItem('user_session') || '{}')
+      this.fakeAuth.login(email, password).subscribe()
+    }
+  }
+
+  isAuthenticated(): boolean {
     return this.fakeAuth.isLoggedIn();
   }
 
-  logout(){
-    this.fakeAuth.logout()
+  logout() {
+    this.fakeAuth.logout();
   }
 
- 
 
-  
+
+
 }

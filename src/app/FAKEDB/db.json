@@ -1,0 +1,60 @@
+{
+    "films": [
+        {
+            "id": "1",
+            "name": "Furiosa: A Mad Max Saga",
+            "discription": "As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.",
+            "primary_image": "https://a.ltrbxd.com/resized/film-poster/7/0/5/2/2/1/705221-furiosa-a-mad-max-saga-0-1000-0-1500-crop.jpg?v=3c0e322842"
+        },
+        {
+            "id": "2",
+            "name": "Hit Man",
+            "discription": "A mild-mannered professor moonlighting as a fake contract killer sparks a chain reaction of trouble when he falls for a client.",
+            "primary_image": "https://a.ltrbxd.com/resized/film-poster/8/7/7/0/4/6/877046-hit-man-0-1000-0-1500-crop.jpg?v=7a8e101a9d"
+        },
+        {
+            "id": "3",
+            "name": "The Last Stop in Yuma County",
+            "discription": "While awaiting the next fuel truck at a middle-of-nowhere Arizona rest stop, a traveling young knife salesman is thrust into a high-stakes hostage situation by the arrival of two similarly stranded bank robbers with no qualms about using cruelty—or cold, hard steel—to protect their bloodstained, ill-gotten fortune",
+            "primary_image": "https://a.ltrbxd.com/resized/film-poster/9/4/4/4/4/5/944445-the-last-stop-in-yuma-county-0-1000-0-1500-crop.jpg?v=9b1c118522"
+        },
+        {
+            "id": "4",
+            "name": "Tuesday",
+            "discription": "A mother and her teenage daughter must confront Death when it arrives in the form of an astonishing talking bird.",
+            "primary_image": "https://a.ltrbxd.com/resized/film-poster/7/4/7/2/1/6/747216-tuesday-0-1000-0-1500-crop.jpg?v=37c94d2cbd"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "username": "csaavedra",
+            "email": "csaavedra@emt.cl",
+            "password": "123456",
+            "watch_films": []
+
+        },
+        {
+            "id": "2",
+            "username": "NICO",
+            "email": "nico@emt.cl",
+            "password": "123456",
+            "watch_films": [1,2,3,4]
+        },
+        {
+            "id": "3",
+            "username": "NICO",
+            "email": "nx@emt.cl",
+            "password": "123456",
+            "watch_films": [1,2,3,4]
+        },
+        {
+            "id": "4",
+            "username": "NICO",
+            "email": "nx2@emt.cl",
+            "password": "123456",
+            "watch_films": [1,2,3,4]
+        }
+        
+    ]
+}
