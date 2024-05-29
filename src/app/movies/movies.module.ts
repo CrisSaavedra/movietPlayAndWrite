@@ -6,8 +6,8 @@ import { MoviesRoutingModule } from './movies-routing.module';
 import { Mdb5Module } from '../mdb5/mdb5.module';
 import { NavbarComponent } from './pages/layout-page/components/navbar/navbar.component';
 import { CardsComponent } from './shared/cards/cards.component';
-import { InfoComponent } from './pages/info/info.component';
 import { FilmsComponent } from './pages/films/films.component';
+import { InfoFilmComponent } from './pages/info-film/info-film.component';
 
 
 
@@ -17,8 +17,8 @@ import { FilmsComponent } from './pages/films/films.component';
     HomeComponent,
     NavbarComponent,
     CardsComponent,
-    InfoComponent,
     FilmsComponent,
+    InfoFilmComponent,
   ],
   imports: [
     CommonModule,
