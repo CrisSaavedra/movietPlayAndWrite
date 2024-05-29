@@ -13,8 +13,9 @@
         color: rgb(114, 114, 114);
         transition: background-color 0.2s ease;
 
-        span {
-            padding-bottom: .3rem;
+        i {
+            padding-bottom: .5rem;
+            font-size: 19px;
         }
     }
 
@@ -32,8 +33,8 @@
         color: rgb(180, 180, 180);
         transition: background-color 0.2s ease;
 
-        span {
-            padding-top: .45rem;
+        i {
+            padding-top: .6rem;
         }
     }
 

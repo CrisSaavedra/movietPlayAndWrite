@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, of, tap } from 'rxjs';
 import { Film } from 'src/app/shared/interfaces/film.interface';
+import { User } from 'src/app/shared/interfaces/user.interface';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -18,6 +19,11 @@ export class LocalDBService {
     return this.http.get(this.GET_ALL_USERS_URL)
   }
 
+  getAllFilms(){
+    return this.http.get<Film[]>(this.GET_ALL_MOVIES_URL)
+
+  }
+
   getMovies(limit?: number) {
     return this.http.get(this.GET_ALL_MOVIES_URL + `?_limit=${limit}`)
   }
@@ -30,5 +36,12 @@ export class LocalDBService {
           return of(null)
         })
       )
+  }
+
+
+  addFilmTolistUser(userID: number){
+    let user_session : User = JSON.parse(localStorage.getItem('user') || '{}')
+    
+    return this.http.patch(this.GET_ALL_USERS_URL + `/${userID}`, {})
   }
 }

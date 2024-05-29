@@ -8,6 +8,8 @@ import { NavbarComponent } from './pages/layout-page/components/navbar/navbar.co
 import { CardsComponent } from './shared/cards/cards.component';
 import { FilmsComponent } from './pages/films/films.component';
 import { InfoFilmComponent } from './pages/info-film/info-film.component';
+import { ListComponent } from './pages/list/list.component';
+import { MembersComponent } from './pages/members/members.component';
 
 
 
@@ -19,6 +21,8 @@ import { InfoFilmComponent } from './pages/info-film/info-film.component';
     CardsComponent,
     FilmsComponent,
     InfoFilmComponent,
+    ListComponent,
+    MembersComponent,
   ],
   imports: [
     CommonModule,

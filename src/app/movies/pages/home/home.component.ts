@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor(private fakeAuth: FakeAuthService, private api : LocalDBService) { }
 
   ngOnInit(): void {
-    this.api.getMovies(4).subscribe((response: any) => {
+    this.api.getMovies(3).subscribe((response: any) => {
       this.films = response
     })
   }
