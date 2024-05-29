@@ -39,21 +39,21 @@
             "username": "NICO",
             "email": "nico@emt.cl",
             "password": "123456",
-            "watch_films": [1,2,3,4]
+            "watch_films": []
         },
         {
             "id": "3",
             "username": "NICO",
             "email": "nx@emt.cl",
             "password": "123456",
-            "watch_films": [1,2,3,4]
+            "watch_films": []
         },
         {
             "id": "4",
             "username": "NICO",
             "email": "nx2@emt.cl",
             "password": "123456",
-            "watch_films": [1,2,3,4]
+            "watch_films": []
         }
         
     ]

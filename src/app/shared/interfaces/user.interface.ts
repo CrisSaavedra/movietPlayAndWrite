@@ -3,5 +3,5 @@ export interface User {
     username:    string;
     mail:        string;
     password:    string;
-    watch_films: number[];
+    watch_films: string[];
 }

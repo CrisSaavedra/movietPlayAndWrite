@@ -12,15 +12,15 @@ export class CardsComponent {
 
   @Input() film?: Film;
   @Input() isAuthenticated?: boolean;
-  
+
 
   constructor(private route: Router, private api: LocalDBService) { }
 
-  onWatchFilm(event :Event) {
+  onWatchFilm(event: Event) {
     event.preventDefault()
     if (!this.isAuthenticated) this.route.navigate(['/auth/login'])
-    
-      this.api
+
+    this.api.patchFilmTolistUser('1', this.film?.id!)
     // add to watch list
   }
 

@@ -19,7 +19,7 @@ export class LocalDBService {
     return this.http.get(this.GET_ALL_USERS_URL)
   }
 
-  getAllFilms(){
+  getAllFilms() {
     return this.http.get<Film[]>(this.GET_ALL_MOVIES_URL)
 
   }
@@ -39,9 +39,10 @@ export class LocalDBService {
   }
 
 
-  addFilmTolistUser(userID: number){
-    let user_session : User = JSON.parse(localStorage.getItem('user') || '{}')
-    
-    return this.http.patch(this.GET_ALL_USERS_URL + `/${userID}`, {})
+  patchFilmTolistUser(userId: string, idFilm: string) {
+    let user_session: User = JSON.parse(localStorage.getItem('user') || '{}')
+    user_session.watch_films.push(idFilm)
+    localStorage.setItem('user_session', JSON.stringify(user_session))
+    return this.http.patch(this.GET_ALL_USERS_URL + `/${userId}`, { "watch_films": user_session.watch_films })
   }
 }
