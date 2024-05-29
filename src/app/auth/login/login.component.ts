@@ -13,12 +13,18 @@ export class LoginComponent {
 
   public loginData = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', [Validators.required])
+    password: new FormControl('', [Validators.required, Validators.minLength(5)])
   });
 
   constructor(private fakeAuth: FakeAuthService, private router: Router) { }
 
   login(event: Event) {
+    if(this.loginData.invalid){
+      this.loginData.markAllAsTouched();
+      return;
+    }
+
+
     event.preventDefault();
     let email = this.loginData.get('email')?.value?.toLowerCase();
     let password = this.loginData.get('password')?.value;
